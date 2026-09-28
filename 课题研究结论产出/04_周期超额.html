@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<title>周期里的超额</title>
+<style>body{font-family:"Microsoft YaHei",sans-serif;background:#181818;color:#ececec;padding:28px;}h2{margin-top:36px;}table{border-collapse:collapse;margin:12px 0 24px;}td,th{border-bottom:1px solid #3d3d3d;padding:6px 10px;text-align:right;}th{color:#a8a8a8;}td:first-child,th:first-child{text-align:left;}img{max-width:960px;background:#111;}p{line-height:1.6;max-width:880px;}</style></head><body>
+<h1>最高溢价组相对全板块等权</h1>
+<p>全板块等权是当月该板块里有 1 个月收益的全部股票简单平均。上涨月指这个等权收益大于 0，下跌月指小于等于 0。连续上涨指信号月上这个等权连续为正，并且这段长于 3 个月。持有 1 个月，未扣成本。四组板块的最高组是第 4 组。</p>
+<p>这个切分用的是持有期里板块自己的涨跌，用来描述已经发生的行情，不是月末已经知道的下单条件。</p>
+<img src="04_最高组相对板块超额.png" alt="上涨月与下跌月超额">
+<h2>上涨月与下跌月</h2>
+<table><tr><th>板块</th><th>组数</th><th>周期</th><th>月数</th><th>超额</th><th>t</th><th>p</th><th>超额为正占比</th></tr>
+<tr><td>医药生物</td><td>5</td><td>上涨</td><td>56</td><td>-1.63%</td><td>-2.21</td><td>0.0314</td><td>39.29%</td></tr>
+<tr><td>医药生物</td><td>5</td><td>下跌</td><td>51</td><td>0.93%</td><td>1.21</td><td>0.2337</td><td>43.14%</td></tr>
+<tr><td>电子</td><td>4</td><td>上涨</td><td>6</td><td>-1.08%</td><td>-0.59</td><td>0.5814</td><td>33.33%</td></tr>
+<tr><td>电子</td><td>4</td><td>下跌</td><td>6</td><td>0.36%</td><td>0.37</td><td>0.7285</td><td>50.00%</td></tr>
+<tr><td>非银金融</td><td>5</td><td>上涨</td><td>56</td><td>1.26%</td><td>1.70</td><td>0.0957</td><td>57.14%</td></tr>
+<tr><td>非银金融</td><td>5</td><td>下跌</td><td>59</td><td>-0.67%</td><td>-1.86</td><td>0.0684</td><td>38.98%</td></tr>
+<tr><td>银行</td><td>5</td><td>上涨</td><td>59</td><td>-0.36%</td><td>-1.79</td><td>0.0783</td><td>33.90%</td></tr>
+<tr><td>银行</td><td>5</td><td>下跌</td><td>56</td><td>0.23%</td><td>1.17</td><td>0.2486</td><td>57.14%</td></tr>
+<tr><td>机械设备</td><td>5</td><td>上涨</td><td>39</td><td>1.91%</td><td>0.83</td><td>0.4144</td><td>38.46%</td></tr>
+<tr><td>机械设备</td><td>5</td><td>下跌</td><td>39</td><td>1.11%</td><td>1.02</td><td>0.3126</td><td>56.41%</td></tr>
+<tr><td>交通运输</td><td>5</td><td>上涨</td><td>68</td><td>-0.75%</td><td>-2.16</td><td>0.0341</td><td>30.88%</td></tr>
+<tr><td>交通运输</td><td>5</td><td>下跌</td><td>47</td><td>1.02%</td><td>2.32</td><td>0.0248</td><td>59.57%</td></tr>
+<tr><td>汽车</td><td>5</td><td>上涨</td><td>61</td><td>2.40%</td><td>1.59</td><td>0.1176</td><td>49.18%</td></tr>
+<tr><td>汽车</td><td>5</td><td>下跌</td><td>54</td><td>0.27%</td><td>0.34</td><td>0.7364</td><td>48.15%</td></tr>
+<tr><td>有色金属</td><td>5</td><td>上涨</td><td>53</td><td>0.15%</td><td>0.10</td><td>0.9231</td><td>43.40%</td></tr>
+<tr><td>有色金属</td><td>5</td><td>下跌</td><td>41</td><td>1.71%</td><td>1.26</td><td>0.2151</td><td>51.22%</td></tr>
+<tr><td>公用事业</td><td>5</td><td>上涨</td><td>53</td><td>0.44%</td><td>0.58</td><td>0.5670</td><td>52.83%</td></tr>
+<tr><td>公用事业</td><td>5</td><td>下跌</td><td>59</td><td>-0.69%</td><td>-1.34</td><td>0.1870</td><td>50.85%</td></tr>
+<tr><td>化工</td><td>4</td><td>上涨</td><td>2</td><td></td><td></td><td></td><td>0.00%</td></tr>
+<tr><td>化工</td><td>4</td><td>下跌</td><td>6</td><td>4.38%</td><td>1.75</td><td>0.1400</td><td>83.33%</td></tr>
+<tr><td>通信</td><td>5</td><td>上涨</td><td>24</td><td>1.89%</td><td>0.72</td><td>0.4762</td><td>50.00%</td></tr>
+<tr><td>通信</td><td>5</td><td>下跌</td><td>17</td><td>-0.63%</td><td>-0.41</td><td>0.6895</td><td>41.18%</td></tr>
+<tr><td>电气设备</td><td>4</td><td>上涨</td><td>27</td><td>-1.38%</td><td>-0.89</td><td>0.3831</td><td>22.22%</td></tr>
+<tr><td>电气设备</td><td>4</td><td>下跌</td><td>33</td><td>0.57%</td><td>0.72</td><td>0.4758</td><td>63.64%</td></tr>
+<tr><td>采掘</td><td>5</td><td>上涨</td><td>65</td><td>-0.90%</td><td>-1.37</td><td>0.1749</td><td>33.85%</td></tr>
+<tr><td>采掘</td><td>5</td><td>下跌</td><td>50</td><td>-1.19%</td><td>-1.86</td><td>0.0693</td><td>26.00%</td></tr>
+<tr><td>建筑材料</td><td>5</td><td>上涨</td><td>15</td><td>-2.14%</td><td>-1.15</td><td>0.2678</td><td>26.67%</td></tr>
+<tr><td>建筑材料</td><td>5</td><td>下跌</td><td>30</td><td>-0.75%</td><td>-0.75</td><td>0.4623</td><td>50.00%</td></tr>
+</table>
+<h2>连续上涨超过 3 个月</h2>
+<table><tr><th>板块</th><th>阶段数</th><th>阶段内月数</th><th>月均超额</th><th>t</th><th>p</th><th>月超额为正占比</th><th>累计超额为正的段数</th></tr>
+<tr><td>医药生物</td><td>5</td><td>22</td><td>-2.77%</td><td>-2.30</td><td>0.0319</td><td>40.91%</td><td>0</td></tr>
+<tr><td>电子</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td>非银金融</td><td>4</td><td>17</td><td>1.73%</td><td>2.09</td><td>0.0526</td><td>58.82%</td><td>3</td></tr>
+<tr><td>银行</td><td>2</td><td>14</td><td>-0.14%</td><td>-0.33</td><td>0.7447</td><td>28.57%</td><td>1</td></tr>
+<tr><td>机械设备</td><td>2</td><td>10</td><td>-1.74%</td><td>-1.39</td><td>0.1992</td><td>20.00%</td><td>0</td></tr>
+<tr><td>交通运输</td><td>7</td><td>33</td><td>-1.28%</td><td>-2.43</td><td>0.0207</td><td>27.27%</td><td>2</td></tr>
+<tr><td>汽车</td><td>2</td><td>14</td><td>0.81%</td><td>0.23</td><td>0.8180</td><td>50.00%</td><td>1</td></tr>
+<tr><td>有色金属</td><td>5</td><td>27</td><td>1.30%</td><td>0.59</td><td>0.5592</td><td>51.85%</td><td>3</td></tr>
+<tr><td>公用事业</td><td>4</td><td>23</td><td>0.33%</td><td>0.28</td><td>0.7802</td><td>52.17%</td><td>2</td></tr>
+<tr><td>化工</td><td>0</td><td>0</td><td></td><td></td><td></td><td></td><td>0</td></tr>
+<tr><td>通信</td><td>3</td><td>12</td><td>2.61%</td><td>0.65</td><td>0.5284</td><td>50.00%</td><td>2</td></tr>
+<tr><td>电气设备</td><td>2</td><td>11</td><td>-2.61%</td><td>-1.78</td><td>0.1054</td><td>18.18%</td><td>0</td></tr>
+<tr><td>采掘</td><td>4</td><td>21</td><td>-2.52%</td><td>-1.67</td><td>0.1097</td><td>23.81%</td><td>1</td></tr>
+<tr><td>建筑材料</td><td>1</td><td>5</td><td>-2.95%</td><td>-0.83</td><td>0.4529</td><td>20.00%</td><td>0</td></tr>
+</table>
+<p>全部阶段 41 段，最高溢价组累计超过板块的有 15 段。各段起止见同目录 CSV。</p>
+<p>t / p 与第 2 步相同，是月度超额均值的检验。1 个月滞后取 0。p 低于 0.05 记为显著。</p>
+</body></html>

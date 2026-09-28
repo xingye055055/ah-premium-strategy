@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<title>纯折价五分组</title>
+<style>body{font-family:"Microsoft YaHei",sans-serif;background:#181818;color:#ececec;padding:28px;}h2{margin-top:36px;}table{border-collapse:collapse;margin:12px 0 24px;}td,th{border-bottom:1px solid #3d3d3d;padding:6px 10px;text-align:right;}th{color:#a8a8a8;}td:first-child,th:first-child{text-align:left;}img{max-width:960px;background:#111;}</style></head><body>
+<h1>纯折价五分组</h1>
+<p>规划 1.0 第 2 步。样本 2017-01-03 起，月末可新开仓，按不复权溢价五等分。G5 为溢价最高（H 最便宜）。收益为 H 后复权，下一交易日收盘买入。金融 / 非金融是在各自池子里重新分组，不是从全样本分组里再拆。</p>
+<h2>全样本</h2>
+<p>全池一起五等分。信号月数 117，最后信号日 2026-09-21。</p>
+<img src="02_纯折价五分组.png" alt="全样本">
+<table><tr><th>期限</th><th>G1</th><th>G2</th><th>G3</th><th>G4</th><th>G5</th><th>G5-G1</th><th>t</th><th>p</th><th>单调</th><th>IC</th><th>ICIR</th><th>月数</th></tr>
+<tr><td>1m</td><td>0.77%</td><td>0.29%</td><td>0.38%</td><td>0.66%</td><td>0.76%</td><td>-0.00%</td><td>-0.00</td><td>0.9993</td><td>否</td><td>-0.03</td><td>-0.19</td><td>115</td></tr>
+<tr><td>3m</td><td>2.29%</td><td>0.81%</td><td>1.49%</td><td>2.21%</td><td>1.83%</td><td>-0.38%</td><td>-0.33</td><td>0.7404</td><td>否</td><td>-0.04</td><td>-0.20</td><td>113</td></tr>
+<tr><td>6m</td><td>4.85%</td><td>2.26%</td><td>4.04%</td><td>5.66%</td><td>4.16%</td><td>-0.24%</td><td>-0.11</td><td>0.9131</td><td>否</td><td>-0.03</td><td>-0.14</td><td>110</td></tr>
+</table>
+<h2>金融</h2>
+<p>只在金融股内部五等分。信号月数 117，最后信号日 2026-09-21。</p>
+<img src="02_纯折价五分组_金融.png" alt="金融">
+<table><tr><th>期限</th><th>G1</th><th>G2</th><th>G3</th><th>G4</th><th>G5</th><th>G5-G1</th><th>t</th><th>p</th><th>单调</th><th>IC</th><th>ICIR</th><th>月数</th></tr>
+<tr><td>1m</td><td>0.53%</td><td>0.52%</td><td>0.48%</td><td>0.30%</td><td>0.60%</td><td>0.07%</td><td>0.08</td><td>0.9339</td><td>否</td><td>-0.09</td><td>-0.23</td><td>115</td></tr>
+<tr><td>3m</td><td>1.28%</td><td>0.92%</td><td>1.48%</td><td>1.09%</td><td>1.66%</td><td>0.39%</td><td>0.20</td><td>0.8383</td><td>否</td><td>-0.10</td><td>-0.22</td><td>113</td></tr>
+<tr><td>6m</td><td>2.95%</td><td>2.31%</td><td>3.26%</td><td>3.18%</td><td>4.16%</td><td>1.12%</td><td>0.34</td><td>0.7318</td><td>否</td><td>-0.04</td><td>-0.10</td><td>110</td></tr>
+</table>
+<h2>非金融</h2>
+<p>只在非金融股内部五等分。信号月数 117，最后信号日 2026-09-21。</p>
+<img src="02_纯折价五分组_非金融.png" alt="非金融">
+<table><tr><th>期限</th><th>G1</th><th>G2</th><th>G3</th><th>G4</th><th>G5</th><th>G5-G1</th><th>t</th><th>p</th><th>单调</th><th>IC</th><th>ICIR</th><th>月数</th></tr>
+<tr><td>1m</td><td>0.78%</td><td>0.44%</td><td>0.51%</td><td>0.68%</td><td>0.67%</td><td>-0.10%</td><td>-0.23</td><td>0.8189</td><td>否</td><td>-0.02</td><td>-0.11</td><td>115</td></tr>
+<tr><td>3m</td><td>2.55%</td><td>1.03%</td><td>1.84%</td><td>2.44%</td><td>1.74%</td><td>-0.73%</td><td>-0.65</td><td>0.5195</td><td>否</td><td>-0.02</td><td>-0.10</td><td>113</td></tr>
+<tr><td>6m</td><td>5.66%</td><td>2.33%</td><td>4.54%</td><td>6.79%</td><td>3.92%</td><td>-1.16%</td><td>-0.52</td><td>0.6061</td><td>否</td><td>-0.01</td><td>-0.07</td><td>110</td></tr>
+</table>
+<p>t / p 为月度序列均值的 Newey-West 检验。1 个月滞后 0，3 个月滞后 2，6 个月滞后 5。未扣交易成本。</p>
+</body></html>
